@@ -46,7 +46,7 @@ from the current position. These points are then used as input to a spline fitti
 calculation simpler, we also transform the coordinates of the generated points to the local car coordinates.
 
 The simulator does not use all the points from the past trajectory at each step. So in order to maintain the continuity we first add all the 
-past points from the previous step then we fill the result of the points (for a maximum of 50 points) using the spline calculation as described in the
+unused points from the previous step then we fill the rest of the points (for a maximum of 50 points) using the points from the spline calculation as described in the
 previous paragraph. The points calculated from the spline are transformed back to the global coordinates before being added to the path points.
 
 # Results
